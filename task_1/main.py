@@ -50,7 +50,7 @@ def main():
 
     words_in_sentences.sort()
     print(words_in_sentences)
-    print(f"Average words in sentence is {sum_of_all_words/sentences_counter}")
+    print(f"Average words in sentence is { sum_of_all_words/sentences_counter }")
     text = text.lower()
     text = text.replace(".", " ")
     text = text.replace("!", " ")
@@ -67,12 +67,12 @@ def main():
     length = len(words_in_sentences)
 
     if len(words_in_sentences) % 2 != 0:
-        median_word = len(words_in_sentences)//2
+        median_word = len(words_in_sentences) // 2
         print(f"Mediun countity of words = {words_in_sentences[median_word]}")
     else:
         print(f"Mediun countity of words = {(words_in_sentences[int(length / 2)] + words_in_sentences[int(length / 2 - 1)]) / 2}")
 
-    print(f"Top ngrams:{get_top_ngramms(4,10,text,words)}")
+    print(f"Top ngrams:{ get_top_ngramms(4, 10, text, words) }")
 
 
 if __name__ == '__main__':
